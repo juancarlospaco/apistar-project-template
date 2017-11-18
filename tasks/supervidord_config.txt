@@ -1,0 +1,10 @@
+[program:my-queue]
+command=bash -c "echo starting main.huey && sleep $(( $RANDOM / 2500 + 4)) && exec huey_consumer.py main.huey"
+environment=PYTHONPATH=%(here)s/..
+numprocs=1
+process_name=%(program_name)s-%(process_num)d
+stopwaitsecs=5
+stdout_logfile=%(here)s/huey.log
+redirect_stderr=true
+
+# http://supervisord.org
