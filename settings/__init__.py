@@ -27,6 +27,8 @@ settings: dict = frozendict({
         #     'user': 'user',
         #     'password': 'password',
         #     'engine': 'PooledPostgresqlDatabase',
+        #     'fields': {'varchar': 'varchar'},  # Other args for DB Driver.
+        #     'register_hstore': False,
         # },
         'default': {  # Development, Local, Testing.
             'database': 'testing.db',
