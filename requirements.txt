@@ -1,23 +1,26 @@
-apistar          # API REST Framework,does HTML too.
-apistar_peewee   # Peewee ORM for APIStar.
-apistar-jwt      # Authentication.
-huey             # Tasks queue.
-peewee           # ORM,required by Huey.
-# anyconfig        # Config util.
-# wtf-peewee     # Required by Peewee Admin.
-# Flask-Admin    # Peewee Admin, like Django Admin but for Peewee.
+apistar              # API REST Framework,does HTML too.
+apistar_peewee       # Peewee ORM for APIStar.
+apistar-jwt          # Authentication.
+huey                 # Tasks queue.
+bcrypt               # Required by Peewee PasswordField.
+pyotp                # 2FA.
+peewee               # ORM,required by Huey.
+peewee-extra-fields  # Peewee additional fields.
+# anyconfig          # Config util.
+# wtf-peewee         # Required by Peewee Admin.
+# Flask-Admin        # Peewee Admin, like Django Admin but for Peewee.
 
 
 # Faster encoders.
-ujson            # Faster JSON Encoder.
-msgpack-python   # Like JSON but faster.
-apistar-msgpack  # Adds MsgPack to APIStar.
+ujson                # Faster JSON Encoder.
+msgpack-python       # Like JSON but faster.
+apistar-msgpack      # Adds MsgPack to APIStar.
 
 
 # Development tools.
-isort            # Sort imports Alphabetically.
-pre-commit       # Pre-Commit static analysis.
-pre-commit-hooks # Hooks for static analysis.
-prospector       # Static analysis.
-coreapi          # Testing and Debug Apistar (Python).
-coreapi-cli      # Testing and Debug Apistar (Bash).
+isort                # Sort imports Alphabetically.
+pre-commit           # Pre-Commit static analysis.
+pre-commit-hooks     # Hooks for static analysis.
+prospector           # Static analysis.
+coreapi              # Testing and Debug Apistar (Python).
+coreapi-cli          # Testing and Debug Apistar (Bash).
