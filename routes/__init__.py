@@ -22,4 +22,12 @@ routes: tuple = (
 
     Route('/debug_request', 'GET', debug_request),
 
+    Route('/register', 'GET', register),       # Form for registering new user.
+
+    Route('/make_user', 'POST', make_user),    # Creates a new user.
+
+    Route('/logout', 'GET', logout),           # Logs you out.
+
+    Route('/login', 'GET', login),             # Form for login existing user.
+
 )
