@@ -1,7 +1,7 @@
 # apistar-project-template
 
 [APIStar](https://github.com/encode/apistar) project template, AKA Boilerplate.
-
+It includes fully working User Accounts with Profile and [2 Factor Authentication.](https://freeotp.github.io)
 
 ![Screenshot](temp.png)
 
