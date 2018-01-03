@@ -14,13 +14,15 @@ Unpacking objects: 100% (39/39), done.
 
 juan@x ~/ $ cd apistar-project-template/
 
+juan@x ~/ master|✓ $ apistar create_tables
+
 juan@x ~/ master|✓ $ apistar run
 
  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 602-786-241
- 
+
 ^C
 juan@x ~/ master|✓ $ # Happy Hacking!.
 ```
