@@ -18,6 +18,8 @@ routes: tuple = (
 
     Route('/static/{path}', 'GET', serve_static),  # Static files from /static/
 
-    Route('/', 'GET', welcome),
+    Route('/', 'GET', index),
+
+    Route('/debug_request', 'GET', debug_request),
 
 )
