@@ -8,7 +8,7 @@
 from datetime import datetime
 from uuid import uuid4
 
-from peewee import DateTimeField, UUIDField
+from peewee import DateTimeField
 
 from apistar_peewee import get_model_base
 
@@ -17,8 +17,6 @@ Model = get_model_base()
 
 
 class BaseModel(Model):
-    uuid = UUIDField(default=uuid4)                     # Each with a UUID4.
-    timestamp = DateTimeField(default=datetime.utcnow)  # Each with timestamp.
 
     def __repr__(self):
         try:  # Try to get all the fields on the model for the str repr.
