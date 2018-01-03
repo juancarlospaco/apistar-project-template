@@ -5,19 +5,17 @@
 """Settings for APIStar, a simple dict."""
 
 
-from types import MappingProxyType as frozendict
-
 from apistar.parsers import JSONParser, MultiPartParser
-from apistar.permissions import IsAuthenticated
+# from apistar.permissions import IsAuthenticated
 from apistar.renderers import HTMLRenderer, JSONRenderer
-from apistar_jwt.authentication import JWTAuthentication
+# from apistar_jwt.authentication import JWTAuthentication
 # https://github.com/juancarlospaco/apistar-msgpack & https://msgpack.org
 from apistar_msgpack import MessagePackParser, MessagePackRenderer
 
 from permissions import *
 
 
-settings: dict = frozendict({
+settings: dict = {
 
     'DATABASE': {
         # 'default': {  # Prod.
@@ -46,32 +44,26 @@ settings: dict = frozendict({
         'PACKAGE_DIRS': ['apistar'],  # Include the built-in apistar templates.
     },
 
-    'RENDERERS': (JSONRenderer(), MessagePackRenderer()),
-    # 'RENDERERS': (JSONRenderer(), MessagePackRenderer(), HTMLRenderer()),
+    'RENDERERS': (JSONRenderer(), MessagePackRenderer(), HTMLRenderer()),
 
     'PARSERS': (JSONParser(), MultiPartParser(), MessagePackParser()),
     # 'PARSERS': (JSONParser(), MultiPartParser()),  # Default.
 
-    'AUTHENTICATION': (JWTAuthentication(), ),
-    'JWT': {  # Do NOT PUSH your SECRET into version control!.
-        'SECRET': 's0m3-l0ng-s3cr3t',  # Long randomized secret string key.
-        'LEEWAY': 60,  # Seconds of expiration time.
-    },  # https://github.com/audiolion/apistar-jwt#usage
+    # 'AUTHENTICATION': (JWTAuthentication(), ),
+    # 'JWT': {  # Do NOT PUSH your SECRET into version control!.
+    #     'SECRET': 's0m3-l0ng-s3cr3t',  # Long randomized secret string key.
+    #     'LEEWAY': 60,  # Seconds of expiration time.
+    # },  # https://github.com/audiolion/apistar-jwt#usage
 
-    'PERMISSIONS': (
-        IsAuthenticated(), IsGuestUser(), IsFreeUser(), IsPremiumUser(),
-        IsCompanyUser(), IsAdminUser(), IsTesterUser(), IsStaffUser(),
-    ),
+    # 'PERMISSIONS': (
+    #     IsAuthenticated(), IsGuestUser(), IsFreeUser(), IsPremiumUser(),
+    #     IsCompanyUser(), IsAdminUser(), IsTesterUser(), IsStaffUser(),
+    # ),
+    #
+    # 'HUEY': {  # https://huey.readthedocs.io
+    #     'FILENAME': 'huey_tasks_queue.db',  # File for Huey DB.
+    #     'NAME': 'apistar',                  # Tasks Queue Name.
+    #     "HOST": '127.0.0.1',                # Your Redis host.
+    # },
 
-    'HUEY': {  # https://huey.readthedocs.io
-        'FILENAME': 'huey_tasks_queue.db',  # File for Huey DB.
-        'NAME': 'apistar',                  # Tasks Queue Name.
-        "HOST": '127.0.0.1',                # Your Redis host.
-    },
-
-    'DONT_WRITE_BYTECODE': True,  # No *.PYC
-
-})
-
-
-# settings: dict = dict(settings)  # Uncomment for Mutable Config at runtime.
+}
