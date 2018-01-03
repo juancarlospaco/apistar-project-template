@@ -44,9 +44,9 @@ settings: dict = {
         'PACKAGE_DIRS': ['apistar'],  # Include the built-in apistar templates.
     },
 
-    'RENDERERS': (JSONRenderer(), MessagePackRenderer(), HTMLRenderer()),
-
-    'PARSERS': (JSONParser(), MultiPartParser(), MessagePackParser()),
+    # 'RENDERERS': (JSONRenderer(), MessagePackRenderer(), HTMLRenderer()),
+    #
+    # 'PARSERS': (JSONParser(), MultiPartParser(), MessagePackParser()),
     # 'PARSERS': (JSONParser(), MultiPartParser()),  # Default.
 
     # 'AUTHENTICATION': (JWTAuthentication(), ),
