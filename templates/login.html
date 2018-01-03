@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+<center>
+    <h1>Login</h1>
+    <form name="login" id="login" method="get" action="debug_request">
+        <br><br>
+        <label for="username"><b>Username *</b></label>
+        <input type="text" dir="auto" name="username" id="username" placeholder="Username" maxlength="128" size="20" required autofocus >
+        <br><br>
+        <label for="password"><b>Password *</b></label>
+        <input type="password" dir="auto" name="password" id="password" placeholder="Password" maxlength="128" size="20" required >
+        <input type="checkbox" id="show-hide" name="show-hide" title="Show/Hide" value="" /><big>👁</big></input>
+        <br><br>
+        <label for="pin">2FA PIN</label>
+        <input type="number" dir="auto" name="pin" id="pin" maxlength="6" size="6" placeholder="2FA PIN" title="FreeOTP 2FA PIN" >
+        <input type="checkbox" id="show-hide2" name="show-hide2" title="Show/Hide" value="" checked /><big>👁</big></input>
+        <a href="https://freeotp.github.io" target="_blank" title="FreeOTP App (2FA)" rel="noopener noreferrer"><small>FreeOTP</small></a>
+        <br><br>
+        <input type="submit" value=" O K ">
+    </form>
+</center>
+
+
+<script>
+    (function() {
+
+        const PasswordToggler = function(element, field) {
+            this.element = element;
+            this.field = field;
+            this.toggle();
+        };
+
+        PasswordToggler.prototype = {
+            toggle: function() {
+                const self = this;
+                self.element.addEventListener("change", function() {
+                    if (self.element.checked) {
+                        self.field.setAttribute("type", "text");
+                    } else {
+                        self.field.setAttribute("type", "password");
+                    }
+                }, false);
+            }
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const checkbox = document.querySelector("#show-hide"),
+                pwd = document.querySelector("#password"),
+                form = document.querySelector("#login");
+                const toggler = new PasswordToggler(checkbox, pwd);
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const checkbox = document.querySelector("#show-hide2"),
+                pwd = document.querySelector("#pin"),
+                form = document.querySelector("#login");
+                const toggler = new PasswordToggler(checkbox, pwd);
+        });
+
+    })();
+</script>
