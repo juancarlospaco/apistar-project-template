@@ -6,20 +6,21 @@
 
 
 from typing import *  # Type Annotations.
-import apistar_peewee
-from apistar.http import Response
-from apistar.interfaces import Auth
 
 from schemas import *  # Schema Validators.
 from settings import settings
 
-from apistar import annotate
-from apistar.interfaces import Auth
-from apistar_jwt.authentication import JWTAuthentication
-from apistar_jwt.token import JWT
+from apistar import annotate, http, render_template
+from apistar.renderers import HTMLRenderer
 
 
-def welcome(name=None):
-    if name is None:
-        return {'message': 'Welcome to API Star!'}
-    return {'message': 'Welcome to API Star, %s!' % name}
+def debug_request(request: http.Request):
+    return {'method': str(request.method),
+            'url': str(request.url),
+            'body': dict(parse.parse_qs(request.body.decode("utf-8"))),
+            'headers': dict(request.headers)}
+
+
+@annotate(renderers=[HTMLRenderer()])
+def index():
+    return render_template('index.html')
