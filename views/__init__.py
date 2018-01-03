@@ -5,6 +5,7 @@
 """Views for APIStar, simple Functions with Type annotations."""
 
 
+from urllib import parse
 from typing import *  # Type Annotations.
 
 from schemas import *  # Schema Validators.
