@@ -1,0 +1,514 @@
+<meta charset="utf-8">
+
+<center>
+    <h1>Register</h1>
+    <form name="signin" id="signin" method="post" action="make_user">
+        <br><br>
+        <label for="username"><b>Username *</b></label>
+        <input type="text" dir="auto" name="username" id="username" placeholder="User" maxlength="128" size="80" required >
+        <br><br>
+        <label for="password"><b>Password *</b></label>
+        <input type="password" dir="auto" name="password" id="password" placeholder="Password" maxlength="128" size="80" required >
+        <input type="checkbox" id="show-hide" name="show-hide" title="Show/Hide" value="" /><big>👁</big></input>
+        <a href="https://freeotp.github.io" target="_blank" title="FreeOTP App (2FA)" rel="noopener noreferrer"><small>FreeOTP</small></a>
+        <br><br>
+        <label for="email"><b>Email *</b></label>
+        <input type="email" dir="auto" name="email" id="email" placeholder="Mail" maxlength="128" size="80" required >
+        <br><br>
+        <details>
+            <summary>Personal Info</summary>
+            <label for="first_name">Firstname</label>
+            <input type="text" dir="auto" name="first_name" id="first_name" placeholder="First Name" maxlength="128" size="80">
+            <br><br>
+            <label for="last_name">Lastname</label>
+            <input type="text" dir="auto" name="last_name" id="last_name" placeholder="Last Name" maxlength="128" size="80">
+            <br><br>
+            <label for="company">Company</label>
+            <input type="text" dir="auto" name="company" id="company" placeholder="Company" maxlength="128" size="80">
+            <br><br>
+            <label for="bio">Bio</label>
+            <input type="text" dir="auto" name="bio" id="bio" placeholder="Personal Bio" maxlength="128" size="80">
+            <br><br>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="ad" data-iso3166numeric="20"  data-iso3166a3="and">(AD) Andorra                               </option>
+                <option value="ae" data-iso3166numeric="784" data-iso3166a3="are">(AE) United Arab Emirates                  </option>
+                <option value="af" data-iso3166numeric="4"   data-iso3166a3="afg">(AF) Afghanistan                           </option>
+                <option value="ag" data-iso3166numeric="28"  data-iso3166a3="atg">(AG) Antigua & Barbuda                     </option>
+                <option value="ai" data-iso3166numeric="660" data-iso3166a3="aia">(AI) Anguilla                              </option>
+                <option value="al" data-iso3166numeric="8"   data-iso3166a3="alb">(AL) Albania                               </option>
+                <option value="am" data-iso3166numeric="51"  data-iso3166a3="arm">(AM) Armenia                               </option>
+                <option value="ao" data-iso3166numeric="24"  data-iso3166a3="ago">(AO) Angola                                </option>
+                <option value="aq" data-iso3166numeric="10"  data-iso3166a3="ata">(AQ) Antarctica                            </option>
+                <option value="ar" data-iso3166numeric="32"  data-iso3166a3="arg">(AR) Argentina                   </option>
+                <option value="as" data-iso3166numeric="16"  data-iso3166a3="asm">(AS) American Samoa                        </option>
+                <option value="at" data-iso3166numeric="40"  data-iso3166a3="aut">(AT) Austria                               </option>
+                <option value="au" data-iso3166numeric="36"  data-iso3166a3="aus">(AU) Australia                             </option>
+                <option value="aw" data-iso3166numeric="533" data-iso3166a3="abw">(AW) Aruba                                 </option>
+                <option value="ax" data-iso3166numeric="248" data-iso3166a3="ala">(AX) Åland Islands                         </option>
+                <option value="az" data-iso3166numeric="31"  data-iso3166a3="aze">(AZ) Azerbaijan                            </option>
+                <option value="ba" data-iso3166numeric="70"  data-iso3166a3="bih">(BA) Bosnia                                </option>
+                <option value="bb" data-iso3166numeric="52"  data-iso3166a3="brb">(BB) Barbados                              </option>
+                <option value="bd" data-iso3166numeric="50"  data-iso3166a3="bgd">(BD) Bangladesh                            </option>
+                <option value="be" data-iso3166numeric="56"  data-iso3166a3="bel">(BE) Belgium                               </option>
+                <option value="bf" data-iso3166numeric="854" data-iso3166a3="bfa">(BF) Burkina Faso                          </option>
+                <option value="bg" data-iso3166numeric="100" data-iso3166a3="bgr">(BG) Bulgaria                              </option>
+                <option value="bh" data-iso3166numeric="48"  data-iso3166a3="bhr">(BH) Bahrain                               </option>
+                <option value="bi" data-iso3166numeric="108" data-iso3166a3="bdi">(BI) Burundi                               </option>
+                <option value="bj" data-iso3166numeric="204" data-iso3166a3="ben">(BJ) Benin                                 </option>
+                <option value="bl" data-iso3166numeric="652" data-iso3166a3="blm">(BL) St. Barthélemy                        </option>
+                <option value="bm" data-iso3166numeric="60"  data-iso3166a3="bmu">(BM) Bermuda                               </option>
+                <option value="bn" data-iso3166numeric="96"  data-iso3166a3="brn">(BN) Brunei                                </option>
+                <option value="bo" data-iso3166numeric="68"  data-iso3166a3="bol">(BO) Bolivia                               </option>
+                <option value="bq" data-iso3166numeric="535" data-iso3166a3="bes">(BQ) Caribbean Netherlands                 </option>
+                <option value="br" data-iso3166numeric="76"  data-iso3166a3="bra">(BR) Brazil                                </option>
+                <option value="bs" data-iso3166numeric="44"  data-iso3166a3="bhs">(BS) Bahamas                               </option>
+                <option value="bt" data-iso3166numeric="64"  data-iso3166a3="btn">(BT) Bhutan                                </option>
+                <option value="bv" data-iso3166numeric="74"  data-iso3166a3="bvt">(BV) Bouvet Island                         </option>
+                <option value="bw" data-iso3166numeric="72"  data-iso3166a3="bwa">(BW) Botswana                              </option>
+                <option value="by" data-iso3166numeric="112" data-iso3166a3="blr">(BY) Belarus                               </option>
+                <option value="bz" data-iso3166numeric="84"  data-iso3166a3="blz">(BZ) Belize                                </option>
+                <option value="ca" data-iso3166numeric="124" data-iso3166a3="can">(CA) Canada                                </option>
+                <option value="cc" data-iso3166numeric="166" data-iso3166a3="cck">(CC) Cocos (Keeling) Islands               </option>
+                <option value="cd" data-iso3166numeric="180" data-iso3166a3="cod">(CD) Congo - Kinshasa                      </option>
+                <option value="cf" data-iso3166numeric="140" data-iso3166a3="caf">(CF) Central African Republic              </option>
+                <option value="cg" data-iso3166numeric="178" data-iso3166a3="cog">(CG) Congo - Brazzaville                   </option>
+                <option value="ch" data-iso3166numeric="756" data-iso3166a3="che">(CH) Switzerland                           </option>
+                <option value="ci" data-iso3166numeric="384" data-iso3166a3="civ">(CI) Côte D’Ivoire                         </option>
+                <option value="ck" data-iso3166numeric="184" data-iso3166a3="cok">(CK) Cook Islands                          </option>
+                <option value="cl" data-iso3166numeric="152" data-iso3166a3="chl">(CL) Chile                                 </option>
+                <option value="cm" data-iso3166numeric="120" data-iso3166a3="cmr">(CM) Cameroon                              </option>
+                <option value="cn" data-iso3166numeric="156" data-iso3166a3="chn">(CN) China                                 </option>
+                <option value="co" data-iso3166numeric="170" data-iso3166a3="col">(CO) Colombia                              </option>
+                <option value="cr" data-iso3166numeric="188" data-iso3166a3="cri">(CR) Costa Rica                            </option>
+                <option value="cu" data-iso3166numeric="192" data-iso3166a3="cub">(CU) Cuba                                  </option>
+                <option value="cv" data-iso3166numeric="132" data-iso3166a3="cpv">(CV) Cape Verde                            </option>
+                <option value="cw" data-iso3166numeric="531" data-iso3166a3="cuw">(CW) Curaçao                               </option>
+                <option value="cx" data-iso3166numeric="162" data-iso3166a3="cxr">(CX) Christmas Island                      </option>
+                <option value="cy" data-iso3166numeric="196" data-iso3166a3="cyp">(CY) Cyprus                                </option>
+                <option value="cz" data-iso3166numeric="203" data-iso3166a3="cze">(CZ) Czechia                               </option>
+                <option value="de" data-iso3166numeric="276" data-iso3166a3="deu">(DE) Germany                               </option>
+                <option value="dj" data-iso3166numeric="262" data-iso3166a3="dji">(DJ) Djibouti                              </option>
+                <option value="dk" data-iso3166numeric="208" data-iso3166a3="dnk">(DK) Denmark                               </option>
+                <option value="dm" data-iso3166numeric="212" data-iso3166a3="dma">(DM) Dominica                              </option>
+                <option value="do" data-iso3166numeric="214" data-iso3166a3="dom">(DO) Dominican Republic                    </option>
+                <option value="dz" data-iso3166numeric="12"  data-iso3166a3="dza">(DZ) Algeria                               </option>
+                <option value="ec" data-iso3166numeric="218" data-iso3166a3="ecu">(EC) Ecuador                               </option>
+                <option value="ee" data-iso3166numeric="233" data-iso3166a3="est">(EE) Estonia                               </option>
+                <option value="eg" data-iso3166numeric="818" data-iso3166a3="egy">(EG) Egypt                                 </option>
+                <option value="eh" data-iso3166numeric="732" data-iso3166a3="esh">(EH) Western Sahara                        </option>
+                <option value="er" data-iso3166numeric="232" data-iso3166a3="eri">(ER) Eritrea                               </option>
+                <option value="es" data-iso3166numeric="724" data-iso3166a3="esp">(ES) Spain                                 </option>
+                <option value="et" data-iso3166numeric="231" data-iso3166a3="eth">(ET) Ethiopia                              </option>
+                <option value="fi" data-iso3166numeric="246" data-iso3166a3="fin">(FI) Finland                               </option>
+                <option value="fj" data-iso3166numeric="242" data-iso3166a3="fji">(FJ) Fiji                                  </option>
+                <option value="fk" data-iso3166numeric="238" data-iso3166a3="flk">(FK) Falkland Islands                      </option>
+                <option value="fm" data-iso3166numeric="583" data-iso3166a3="fsm">(FM) Micronesia                            </option>
+                <option value="fo" data-iso3166numeric="234" data-iso3166a3="fro">(FO) Faroe Islands                         </option>
+                <option value="fr" data-iso3166numeric="250" data-iso3166a3="fra">(FR) France                                </option>
+                <option value="ga" data-iso3166numeric="266" data-iso3166a3="gab">(GA) Gabon                                 </option>
+                <option value="gb" data-iso3166numeric="826" data-iso3166a3="gbr">(GB) Uk                                    </option>
+                <option value="gd" data-iso3166numeric="308" data-iso3166a3="grd">(GD) Grenada                               </option>
+                <option value="ge" data-iso3166numeric="268" data-iso3166a3="geo">(GE) Georgia                               </option>
+                <option value="gf" data-iso3166numeric="254" data-iso3166a3="guf">(GF) French Guiana                         </option>
+                <option value="gg" data-iso3166numeric="831" data-iso3166a3="ggy">(GG) Guernsey                              </option>
+                <option value="gh" data-iso3166numeric="288" data-iso3166a3="gha">(GH) Ghana                                 </option>
+                <option value="gi" data-iso3166numeric="292" data-iso3166a3="gib">(GI) Gibraltar                             </option>
+                <option value="gl" data-iso3166numeric="304" data-iso3166a3="grl">(GL) Greenland                             </option>
+                <option value="gm" data-iso3166numeric="270" data-iso3166a3="gmb">(GM) Gambia                                </option>
+                <option value="gn" data-iso3166numeric="324" data-iso3166a3="gin">(GN) Guinea                                </option>
+                <option value="gp" data-iso3166numeric="312" data-iso3166a3="glp">(GP) Guadeloupe                            </option>
+                <option value="gq" data-iso3166numeric="226" data-iso3166a3="gnq">(GQ) Equatorial Guinea                     </option>
+                <option value="gr" data-iso3166numeric="300" data-iso3166a3="grc">(GR) Greece                                </option>
+                <option value="gs" data-iso3166numeric="239" data-iso3166a3="sgs">(GS) South Georgia & South Sandwich Islands</option>
+                <option value="gt" data-iso3166numeric="320" data-iso3166a3="gtm">(GT) Guatemala                             </option>
+                <option value="gu" data-iso3166numeric="316" data-iso3166a3="gum">(GU) Guam                                  </option>
+                <option value="gw" data-iso3166numeric="624" data-iso3166a3="gnb">(GW) Guinea-Bissau                         </option>
+                <option value="gy" data-iso3166numeric="328" data-iso3166a3="guy">(GY) Guyana                                </option>
+                <option value="hk" data-iso3166numeric="344" data-iso3166a3="hkg">(HK) Hong Kong                             </option>
+                <option value="hm" data-iso3166numeric="334" data-iso3166a3="hmd">(HM) Heard & Mcdonald Islands              </option>
+                <option value="hn" data-iso3166numeric="340" data-iso3166a3="hnd">(HN) Honduras                              </option>
+                <option value="hr" data-iso3166numeric="191" data-iso3166a3="hrv">(HR) Croatia                               </option>
+                <option value="ht" data-iso3166numeric="332" data-iso3166a3="hti">(HT) Haiti                                 </option>
+                <option value="hu" data-iso3166numeric="348" data-iso3166a3="hun">(HU) Hungary                               </option>
+                <option value="id" data-iso3166numeric="360" data-iso3166a3="idn">(ID) Indonesia                             </option>
+                <option value="ie" data-iso3166numeric="372" data-iso3166a3="irl">(IE) Ireland                               </option>
+                <option value="il" data-iso3166numeric="376" data-iso3166a3="isr">(IL) Israel                                </option>
+                <option value="im" data-iso3166numeric="833" data-iso3166a3="imn">(IM) Isle Of Man                           </option>
+                <option value="in" data-iso3166numeric="356" data-iso3166a3="ind">(IN) India                                 </option>
+                <option value="io" data-iso3166numeric="86"  data-iso3166a3="iot">(IO) British Indian Ocean Territory        </option>
+                <option value="iq" data-iso3166numeric="368" data-iso3166a3="irq">(IQ) Iraq                                  </option>
+                <option value="ir" data-iso3166numeric="364" data-iso3166a3="irn">(IR) Iran                                  </option>
+                <option value="is" data-iso3166numeric="352" data-iso3166a3="isl">(IS) Iceland                               </option>
+                <option value="it" data-iso3166numeric="380" data-iso3166a3="ita">(IT) Italy                                 </option>
+                <option value="je" data-iso3166numeric="832" data-iso3166a3="jey">(JE) Jersey                                </option>
+                <option value="jm" data-iso3166numeric="388" data-iso3166a3="jam">(JM) Jamaica                               </option>
+                <option value="jo" data-iso3166numeric="400" data-iso3166a3="jor">(JO) Jordan                                </option>
+                <option value="jp" data-iso3166numeric="392" data-iso3166a3="jpn">(JP) Japan                                 </option>
+                <option value="ke" data-iso3166numeric="404" data-iso3166a3="ken">(KE) Kenya                                 </option>
+                <option value="kg" data-iso3166numeric="417" data-iso3166a3="kgz">(KG) Kyrgyzstan                            </option>
+                <option value="kh" data-iso3166numeric="116" data-iso3166a3="khm">(KH) Cambodia                              </option>
+                <option value="ki" data-iso3166numeric="296" data-iso3166a3="kir">(KI) Kiribati                              </option>
+                <option value="km" data-iso3166numeric="174" data-iso3166a3="com">(KM) Comoros                               </option>
+                <option value="kn" data-iso3166numeric="659" data-iso3166a3="kna">(KN) St. Kitts & Nevis                     </option>
+                <option value="kp" data-iso3166numeric="408" data-iso3166a3="prk">(KP) North Korea                           </option>
+                <option value="kr" data-iso3166numeric="410" data-iso3166a3="kor">(KR) South Korea                           </option>
+                <option value="kw" data-iso3166numeric="414" data-iso3166a3="kwt">(KW) Kuwait                                </option>
+                <option value="ky" data-iso3166numeric="136" data-iso3166a3="cym">(KY) Cayman Islands                        </option>
+                <option value="kz" data-iso3166numeric="398" data-iso3166a3="kaz">(KZ) Kazakhstan                            </option>
+                <option value="la" data-iso3166numeric="418" data-iso3166a3="lao">(LA) Laos                                  </option>
+                <option value="lb" data-iso3166numeric="422" data-iso3166a3="lbn">(LB) Lebanon                               </option>
+                <option value="lc" data-iso3166numeric="662" data-iso3166a3="lca">(LC) St. Lucia                             </option>
+                <option value="li" data-iso3166numeric="438" data-iso3166a3="lie">(LI) Liechtenstein                         </option>
+                <option value="lk" data-iso3166numeric="144" data-iso3166a3="lka">(LK) Sri Lanka                             </option>
+                <option value="lr" data-iso3166numeric="430" data-iso3166a3="lbr">(LR) Liberia                               </option>
+                <option value="ls" data-iso3166numeric="426" data-iso3166a3="lso">(LS) Lesotho                               </option>
+                <option value="lt" data-iso3166numeric="440" data-iso3166a3="ltu">(LT) Lithuania                             </option>
+                <option value="lu" data-iso3166numeric="442" data-iso3166a3="lux">(LU) Luxembourg                            </option>
+                <option value="lv" data-iso3166numeric="428" data-iso3166a3="lva">(LV) Latvia                                </option>
+                <option value="ly" data-iso3166numeric="434" data-iso3166a3="lby">(LY) Libya                                 </option>
+                <option value="ma" data-iso3166numeric="504" data-iso3166a3="mar">(MA) Morocco                               </option>
+                <option value="mc" data-iso3166numeric="492" data-iso3166a3="mco">(MC) Monaco                                </option>
+                <option value="md" data-iso3166numeric="498" data-iso3166a3="mda">(MD) Moldova                               </option>
+                <option value="me" data-iso3166numeric="499" data-iso3166a3="mne">(ME) Montenegro                            </option>
+                <option value="mf" data-iso3166numeric="663" data-iso3166a3="maf">(MF) St. Martin                            </option>
+                <option value="mg" data-iso3166numeric="450" data-iso3166a3="mdg">(MG) Madagascar                            </option>
+                <option value="mh" data-iso3166numeric="584" data-iso3166a3="mhl">(MH) Marshall Islands                      </option>
+                <option value="mk" data-iso3166numeric="807" data-iso3166a3="mkd">(MK) Macedonia                             </option>
+                <option value="ml" data-iso3166numeric="466" data-iso3166a3="mli">(ML) Mali                                  </option>
+                <option value="mm" data-iso3166numeric="104" data-iso3166a3="mmr">(MM) Myanmar                               </option>
+                <option value="mn" data-iso3166numeric="496" data-iso3166a3="mng">(MN) Mongolia                              </option>
+                <option value="mo" data-iso3166numeric="446" data-iso3166a3="mac">(MO) Macau                                 </option>
+                <option value="mp" data-iso3166numeric="580" data-iso3166a3="mnp">(MP) Northern Mariana Islands              </option>
+                <option value="mq" data-iso3166numeric="474" data-iso3166a3="mtq">(MQ) Martinique                            </option>
+                <option value="mr" data-iso3166numeric="478" data-iso3166a3="mrt">(MR) Mauritania                            </option>
+                <option value="ms" data-iso3166numeric="500" data-iso3166a3="msr">(MS) Montserrat                            </option>
+                <option value="mt" data-iso3166numeric="470" data-iso3166a3="mlt">(MT) Malta                                 </option>
+                <option value="mu" data-iso3166numeric="480" data-iso3166a3="mus">(MU) Mauritius                             </option>
+                <option value="mv" data-iso3166numeric="462" data-iso3166a3="mdv">(MV) Maldives                              </option>
+                <option value="mw" data-iso3166numeric="454" data-iso3166a3="mwi">(MW) Malawi                                </option>
+                <option value="mx" data-iso3166numeric="484" data-iso3166a3="mex">(MX) Mexico                                </option>
+                <option value="my" data-iso3166numeric="458" data-iso3166a3="mys">(MY) Malaysia                              </option>
+                <option value="mz" data-iso3166numeric="508" data-iso3166a3="moz">(MZ) Mozambique                            </option>
+                <option value="na" data-iso3166numeric="516" data-iso3166a3="nam">(NA) Namibia                               </option>
+                <option value="nc" data-iso3166numeric="540" data-iso3166a3="ncl">(NC) New Caledonia                         </option>
+                <option value="ne" data-iso3166numeric="562" data-iso3166a3="ner">(NE) Niger                                 </option>
+                <option value="nf" data-iso3166numeric="574" data-iso3166a3="nfk">(NF) Norfolk Island                        </option>
+                <option value="ng" data-iso3166numeric="566" data-iso3166a3="nga">(NG) Nigeria                               </option>
+                <option value="ni" data-iso3166numeric="558" data-iso3166a3="nic">(NI) Nicaragua                             </option>
+                <option value="nl" data-iso3166numeric="528" data-iso3166a3="nld">(NL) Netherlands                           </option>
+                <option value="no" data-iso3166numeric="578" data-iso3166a3="nor">(NO) Norway                                </option>
+                <option value="np" data-iso3166numeric="524" data-iso3166a3="npl">(NP) Nepal                                 </option>
+                <option value="nr" data-iso3166numeric="520" data-iso3166a3="nru">(NR) Nauru                                 </option>
+                <option value="nu" data-iso3166numeric="570" data-iso3166a3="niu">(NU) Niue                                  </option>
+                <option value="nz" data-iso3166numeric="554" data-iso3166a3="nzl">(NZ) New Zealand                           </option>
+                <option value="om" data-iso3166numeric="512" data-iso3166a3="omn">(OM) Oman                                  </option>
+                <option value="pa" data-iso3166numeric="591" data-iso3166a3="pan">(PA) Panama                                </option>
+                <option value="pe" data-iso3166numeric="604" data-iso3166a3="per">(PE) Peru                                  </option>
+                <option value="pf" data-iso3166numeric="258" data-iso3166a3="pyf">(PF) French Polynesia                      </option>
+                <option value="pg" data-iso3166numeric="598" data-iso3166a3="png">(PG) Papua New Guinea                      </option>
+                <option value="ph" data-iso3166numeric="608" data-iso3166a3="phl">(PH) Philippines                           </option>
+                <option value="pk" data-iso3166numeric="586" data-iso3166a3="pak">(PK) Pakistan                              </option>
+                <option value="pl" data-iso3166numeric="616" data-iso3166a3="pol">(PL) Poland                                </option>
+                <option value="pm" data-iso3166numeric="666" data-iso3166a3="spm">(PM) St. Pierre & Miquelon                 </option>
+                <option value="pn" data-iso3166numeric="612" data-iso3166a3="pcn">(PN) Pitcairn Islands                      </option>
+                <option value="pr" data-iso3166numeric="630" data-iso3166a3="pri">(PR) Puerto Rico                           </option>
+                <option value="ps" data-iso3166numeric="275" data-iso3166a3="pse">(PS) Palestine                             </option>
+                <option value="pt" data-iso3166numeric="620" data-iso3166a3="prt">(PT) Portugal                              </option>
+                <option value="pw" data-iso3166numeric="585" data-iso3166a3="plw">(PW) Palau                                 </option>
+                <option value="py" data-iso3166numeric="600" data-iso3166a3="pry">(PY) Paraguay                              </option>
+                <option value="qa" data-iso3166numeric="634" data-iso3166a3="qat">(QA) Qatar                                 </option>
+                <option value="re" data-iso3166numeric="638" data-iso3166a3="reu">(RE) Réunion                               </option>
+                <option value="ro" data-iso3166numeric="642" data-iso3166a3="rou">(RO) Romania                               </option>
+                <option value="rs" data-iso3166numeric="688" data-iso3166a3="srb">(RS) Serbia                                </option>
+                <option value="ru" data-iso3166numeric="643" data-iso3166a3="rus">(RU) Russia                                </option>
+                <option value="rw" data-iso3166numeric="646" data-iso3166a3="rwa">(RW) Rwanda                                </option>
+                <option value="sa" data-iso3166numeric="682" data-iso3166a3="sau">(SA) Saudi Arabia                          </option>
+                <option value="sb" data-iso3166numeric="90"  data-iso3166a3="slb">(SB) Solomon Islands                       </option>
+                <option value="sc" data-iso3166numeric="690" data-iso3166a3="syc">(SC) Seychelles                            </option>
+                <option value="sd" data-iso3166numeric="729" data-iso3166a3="sdn">(SD) Sudan                                 </option>
+                <option value="se" data-iso3166numeric="752" data-iso3166a3="swe">(SE) Sweden                                </option>
+                <option value="sg" data-iso3166numeric="702" data-iso3166a3="sgp">(SG) Singapore                             </option>
+                <option value="sh" data-iso3166numeric="654" data-iso3166a3="shn">(SH) St. Helena                            </option>
+                <option value="si" data-iso3166numeric="705" data-iso3166a3="svn">(SI) Slovenia                              </option>
+                <option value="sj" data-iso3166numeric="744" data-iso3166a3="sjm">(SJ) Svalbard & Jan Mayen                  </option>
+                <option value="sk" data-iso3166numeric="703" data-iso3166a3="svk">(SK) Slovakia                              </option>
+                <option value="sl" data-iso3166numeric="694" data-iso3166a3="sle">(SL) Sierra Leone                          </option>
+                <option value="sm" data-iso3166numeric="674" data-iso3166a3="smr">(SM) San Marino                            </option>
+                <option value="sn" data-iso3166numeric="686" data-iso3166a3="sen">(SN) Senegal                               </option>
+                <option value="so" data-iso3166numeric="706" data-iso3166a3="som">(SO) Somalia                               </option>
+                <option value="sr" data-iso3166numeric="740" data-iso3166a3="sur">(SR) Suriname                              </option>
+                <option value="ss" data-iso3166numeric="728" data-iso3166a3="ssd">(SS) South Sudan                           </option>
+                <option value="st" data-iso3166numeric="678" data-iso3166a3="stp">(ST) São Tomé & Príncipe                   </option>
+                <option value="sv" data-iso3166numeric="222" data-iso3166a3="slv">(SV) El Salvador                           </option>
+                <option value="sx" data-iso3166numeric="534" data-iso3166a3="sxm">(SX) Sint Maarten                          </option>
+                <option value="sy" data-iso3166numeric="760" data-iso3166a3="syr">(SY) Syria                                 </option>
+                <option value="sz" data-iso3166numeric="748" data-iso3166a3="swz">(SZ) Swaziland                             </option>
+                <option value="tc" data-iso3166numeric="796" data-iso3166a3="tca">(TC) Turks & Caicos Islands                </option>
+                <option value="td" data-iso3166numeric="148" data-iso3166a3="tcd">(TD) Chad                                  </option>
+                <option value="tf" data-iso3166numeric="260" data-iso3166a3="atf">(TF) French Southern Territories           </option>
+                <option value="tg" data-iso3166numeric="768" data-iso3166a3="tgo">(TG) Togo                                  </option>
+                <option value="th" data-iso3166numeric="764" data-iso3166a3="tha">(TH) Thailand                              </option>
+                <option value="tj" data-iso3166numeric="762" data-iso3166a3="tjk">(TJ) Tajikistan                            </option>
+                <option value="tk" data-iso3166numeric="772" data-iso3166a3="tkl">(TK) Tokelau                               </option>
+                <option value="tl" data-iso3166numeric="626" data-iso3166a3="tls">(TL) Timor-Leste                           </option>
+                <option value="tm" data-iso3166numeric="795" data-iso3166a3="tkm">(TM) Turkmenistan                          </option>
+                <option value="tn" data-iso3166numeric="788" data-iso3166a3="tun">(TN) Tunisia                               </option>
+                <option value="to" data-iso3166numeric="776" data-iso3166a3="ton">(TO) Tonga                                 </option>
+                <option value="tr" data-iso3166numeric="792" data-iso3166a3="tur">(TR) Turkey                                </option>
+                <option value="tt" data-iso3166numeric="780" data-iso3166a3="tto">(TT) Trinidad & Tobago                     </option>
+                <option value="tv" data-iso3166numeric="798" data-iso3166a3="tuv">(TV) Tuvalu                                </option>
+                <option value="tw" data-iso3166numeric="158" data-iso3166a3="twn">(TW) Taiwan                                </option>
+                <option value="tz" data-iso3166numeric="834" data-iso3166a3="tza">(TZ) Tanzania                              </option>
+                <option value="ua" data-iso3166numeric="804" data-iso3166a3="ukr">(UA) Ukraine                               </option>
+                <option value="ug" data-iso3166numeric="800" data-iso3166a3="uga">(UG) Uganda                                </option>
+                <option value="um" data-iso3166numeric="581" data-iso3166a3="umi">(UM) U.S. Outlying Islands                 </option>
+                <option value="us" data-iso3166numeric="840" data-iso3166a3="usa" selected >(US) Us                                    </option>
+                <option value="uy" data-iso3166numeric="858" data-iso3166a3="ury">(UY) Uruguay                               </option>
+                <option value="uz" data-iso3166numeric="860" data-iso3166a3="uzb">(UZ) Uzbekistan                            </option>
+                <option value="va" data-iso3166numeric="336" data-iso3166a3="vat">(VA) Vatican City                          </option>
+                <option value="vc" data-iso3166numeric="670" data-iso3166a3="vct">(VC) St. Vincent & Grenadines              </option>
+                <option value="ve" data-iso3166numeric="862" data-iso3166a3="ven">(VE) Venezuela                             </option>
+                <option value="vg" data-iso3166numeric="92"  data-iso3166a3="vgb">(VG) British Virgin Islands                </option>
+                <option value="vi" data-iso3166numeric="850" data-iso3166a3="vir">(VI) U.S. Virgin Islands                   </option>
+                <option value="vn" data-iso3166numeric="704" data-iso3166a3="vnm">(VN) Vietnam                               </option>
+                <option value="vu" data-iso3166numeric="548" data-iso3166a3="vut">(VU) Vanuatu                               </option>
+                <option value="wf" data-iso3166numeric="876" data-iso3166a3="wlf">(WF) Wallis & Futuna                       </option>
+                <option value="ws" data-iso3166numeric="882" data-iso3166a3="wsm">(WS) Samoa                                 </option>
+                <option value="ye" data-iso3166numeric="887" data-iso3166a3="yem">(YE) Yemen                                 </option>
+                <option value="yt" data-iso3166numeric="175" data-iso3166a3="myt">(YT) Mayotte                               </option>
+                <option value="za" data-iso3166numeric="710" data-iso3166a3="zaf">(ZA) South Africa                          </option>
+                <option value="zm" data-iso3166numeric="894" data-iso3166a3="zmb">(ZM) Zambia                                </option>
+                <option value="zw" data-iso3166numeric="716" data-iso3166a3="zwe">(ZW) Zimbabwe                              </option>
+            </select>
+
+            <br><br>
+            <label for="language">Language</label>
+            <select id="language" name="language">
+                <option value="aa">(AA) Afar (afaraf)</option>
+                <option value="ab">(AB) Abkhaz (аҧсуа)</option>
+                <option value="ae">(AE) Avestan (avesta)</option>
+                <option value="af">(AF) Afrikaans (afrikaans)</option>
+                <option value="ak">(AK) Akan (akan)</option>
+                <option value="am">(AM) Amharic (አማርኛ)</option>
+                <option value="an">(AN) Aragonese (aragonés)</option>
+                <option value="ar">(AR) Arabic (العربية)</option>
+                <option value="as">(AS) Assamese (অসমীয়া)</option>
+                <option value="av">(AV) Avaric (авар мацӏ, магӏарул мацӏ)</option>
+                <option value="ay">(AY) Aymara (aymar aru)</option>
+                <option value="az">(AZ) Azerbaijani (azərbaycan dili)</option>
+                <option value="ba">(BA) Bashkir (башҡорт теле)</option>
+                <option value="be">(BE) Belarusian (беларуская)</option>
+                <option value="bg">(BG) Bulgarian (български език)</option>
+                <option value="bh">(BH) Bihari (भोजपुरी)</option>
+                <option value="bi">(BI) Bislama (bislama)</option>
+                <option value="bm">(BM) Bambara (bamanankan)</option>
+                <option value="bn">(BN) Bengali (বাংলা)</option>
+                <option value="bo">(BO) Tibetan (tibetanབོད་ཡིག)</option>
+                <option value="br">(BR) Breton (brezhoneg)</option>
+                <option value="bs">(BS) Bosnian (bosanski jezik)</option>
+                <option value="ca">(CA) Catalan (català)</option>
+                <option value="ce">(CE) Chechen (нохчийн мотт)</option>
+                <option value="ch">(CH) Chamorro (chamoru)</option>
+                <option value="co">(CO) Corsican (corsu, lingua corsa)</option>
+                <option value="cr">(CR) Cree (ᓀᐦᐃᔭᐍᐏᐣ)</option>
+                <option value="cs">(CS) Czech (česky, čeština)</option>
+                <option value="cu">(CU) Old Church Slavonic (ѩзыкъ словѣньскъ)</option>
+                <option value="cv">(CV) Chuvash (чӑваш чӗлхи)</option>
+                <option value="cy">(CY) Welsh (cymraeg)</option>
+                <option value="da">(DA) Danish (dansk)</option>
+                <option value="de">(DE) German (deutsch)</option>
+                <option value="dv">(DV) Divehi (ދިވެހި)</option>
+                <option value="dz">(DZ) Dzongkha (dzongkha)</option>
+                <option value="ee">(EE) Ewe (eʋegbe)</option>
+                <option value="el">(EL) Greek (ελληνικά)</option>
+                <option value="en" selected >(EN) English (english)</option>
+                <option value="eo">(EO) Esperanto (esperanto)</option>
+                <option value="es">(ES) Spanish (español, castellano)</option>
+                <option value="et">(ET) Estonian (eesti, eesti keel)</option>
+                <option value="eu">(EU) Basque (euskara, euskera)</option>
+                <option value="fa">(FA) Persian (فارسی)</option>
+                <option value="ff">(FF) Fulah (fulfulde, pulaar, pular)</option>
+                <option value="fi">(FI) Finnish (suomi, suomen kieli)</option>
+                <option value="fj">(FJ) Fijian (vosa vakaviti)</option>
+                <option value="fo">(FO) Faroese (føroyskt)</option>
+                <option value="fr">(FR) French (français, langue française)</option>
+                <option value="fy">(FY) Western Frisian (frysk)</option>
+                <option value="ga">(GA) Irish (gaeilge)</option>
+                <option value="gd">(GD) Gaelic (gàidhlig)</option>
+                <option value="gl">(GL) Galician (galego)</option>
+                <option value="gn">(GN) Guarani (avañeẽ)</option>
+                <option value="gu">(GU) Gujarati (ગુજરાતી)</option>
+                <option value="gv">(GV) Manx (gaelg, gailck)</option>
+                <option value="ha">(HA) Hausa (hausa, هَوُسَ)</option>
+                <option value="he">(HE) Hebrew (עברית)</option>
+                <option value="hi">(HI) Hindi (हिन्दी, हिंदी)</option>
+                <option value="ho">(HO) Hiri Motu (hiri motu)</option>
+                <option value="hr">(HR) Croatian (hrvatski)</option>
+                <option value="ht">(HT) Haitian (kreyòl ayisyen)</option>
+                <option value="hu">(HU) Hungarian (magyar)</option>
+                <option value="hy">(HY) Armenian (հայերեն)</option>
+                <option value="hz">(HZ) Herero (otjiherero)</option>
+                <option value="ia">(IA) Interlingua (interlingua)</option>
+                <option value="id">(ID) Indonesian (bahasa indonesia)</option>
+                <option value="ie">(IE) Interlingue (interlingue)</option>
+                <option value="ig">(IG) Igbo (asụsụ igbo)</option>
+                <option value="ii">(II) Nuosu (ꆈꌠ꒿ nuosuhxop)</option>
+                <option value="ik">(IK) Inupiaq (iñupiaq, iñupiatun)</option>
+                <option value="io">(IO) Ido (ido)</option>
+                <option value="is">(IS) Icelandic (íslenska)</option>
+                <option value="it">(IT) Italian (italiano)</option>
+                <option value="iu">(IU) Inuktitut (ᐃᓄᒃᑎᑐᑦ)</option>
+                <option value="ja">(JA) Japanese (日本語 (にほんご／にっぽんご))</option>
+                <option value="jv">(JV) Javanese (basa jawa)</option>
+                <option value="ka">(KA) Georgian (ქართული)</option>
+                <option value="kg">(KG) Kongo (kikongo)</option>
+                <option value="ki">(KI) Kikuyu (gĩkũyũ)</option>
+                <option value="kj">(KJ) Kwanyama (kuanyama)</option>
+                <option value="kk">(KK) Kazakh (қазақ тілі)</option>
+                <option value="kl">(KL) Greenlandic (kalaallisut, kalaallit oqaasii)</option>
+                <option value="km">(KM) Khmer (ភាសាខ្មែរ)</option>
+                <option value="kn">(KN) Kannada (ಕನ್ನಡ)</option>
+                <option value="ko">(KO) Korean (한국어 (韓國語), 조선말 (朝鮮語))</option>
+                <option value="kr">(KR) Kanuri (kanuri)</option>
+                <option value="ks">(KS) Kashmiri (कश्मीरी, كشميري)</option>
+                <option value="ku">(KU) Kurdish (kurdî, كوردی)</option>
+                <option value="kv">(KV) Komi (коми кыв)</option>
+                <option value="kw">(KW) Cornish (kernewek)</option>
+                <option value="ky">(KY) Kirghiz (кыргыз тили)</option>
+                <option value="la">(LA) Latin (latine, lingua latina)</option>
+                <option value="lb">(LB) Luxembourgish, Letzeburgesch (lëtzebuergesch)</option>
+                <option value="lg">(LG) Luganda (luganda)</option>
+                <option value="li">(LI) Limburgish, Limburgan, Limburger (limburgs)</option>
+                <option value="ln">(LN) Lingala (lingála)</option>
+                <option value="lo">(LO) Lao (ພາສາລາວ)</option>
+                <option value="lt">(LT) Lithuanian (lietuvių kalba)</option>
+                <option value="lu">(LU) Luba-Katanga (luba-katanga)</option>
+                <option value="lv">(LV) Latvian (latviešu valoda)</option>
+                <option value="mg">(MG) Malagasy (malagasy fiteny)</option>
+                <option value="mh">(MH) Marshallese (kajin m̧ajeļ)</option>
+                <option value="mi">(MI) Maori (māori)</option>
+                <option value="mk">(MK) Macedonian (македонски јазик)</option>
+                <option value="ml">(ML) Malayalam (മലയാളം)</option>
+                <option value="mn">(MN) Mongolian (монгол)</option>
+                <option value="mr">(MR) Marathi (मराठी)</option>
+                <option value="ms">(MS) Malay (bahasa melayu, بهاس ملايو)</option>
+                <option value="mt">(MT) Maltese (malti)</option>
+                <option value="my">(MY) Burmese (ဗမာစာ)</option>
+                <option value="na">(NA) Nauru (ekakairũ naoero)</option>
+                <option value="nb">(NB) Norwegian Bokmal (norsk bokmål)</option>
+                <option value="nd">(ND) North Ndebele (isindebele)</option>
+                <option value="ne">(NE) Nepali (नेपाली)</option>
+                <option value="ng">(NG) Ndonga (owambo)</option>
+                <option value="nl">(NL) Dutch (nederlands, vlaams)</option>
+                <option value="nn">(NN) Norwegian Nynorsk (norsk nynorsk)</option>
+                <option value="no">(NO) Norwegian (norsk)</option>
+                <option value="nr">(NR) South Ndebele (isindebele)</option>
+                <option value="nv">(NV) Navajo (diné bizaad, dinékʼehǰí)</option>
+                <option value="ny">(NY) Chichewa (chicheŵa, chinyanja)</option>
+                <option value="oc">(OC) Occitan (occitan)</option>
+                <option value="oj">(OJ) Ojibwe (ᐊᓂᔑᓈᐯᒧᐎᓐ)</option>
+                <option value="om">(OM) Oromo (afaan oromoo)</option>
+                <option value="or">(OR) Oriya (ଓଡ଼ିଆ)</option>
+                <option value="os">(OS) Ossetian (ирон æвзаг)</option>
+                <option value="pa">(PA) Punjabi (ਪੰਜਾਬੀ, پنجابی)</option>
+                <option value="pi">(PI) Pali (पाऴि)</option>
+                <option value="pl">(PL) Polish (polski)</option>
+                <option value="ps">(PS) Pashto (پښتو)</option>
+                <option value="pt">(PT) Portuguese (português)</option>
+                <option value="qu">(QU) Quechua (runa simi, kichwa)</option>
+                <option value="rm">(RM) Romansh (rumantsch grischun)</option>
+                <option value="rn">(RN) Kirundi (kirundi)</option>
+                <option value="ro">(RO) Romanian (română)</option>
+                <option value="ru">(RU) Russian (русский язык)</option>
+                <option value="rw">(RW) Kinyarwanda (ikinyarwanda)</option>
+                <option value="sa">(SA) Sanskrit (संस्कृतम्)</option>
+                <option value="sc">(SC) Sardinian (sardu)</option>
+                <option value="sd">(SD) Sindhi (सिन्धी, سنڌي، سندھی)</option>
+                <option value="se">(SE) Northern Sami (davvisámegiella)</option>
+                <option value="sg">(SG) Sango (yângâ tî sängö)</option>
+                <option value="si">(SI) Sinhalese (සිංහල)</option>
+                <option value="sk">(SK) Slovak (slovenčina)</option>
+                <option value="sl">(SL) Slovene (slovenščina)</option>
+                <option value="sm">(SM) Samoan (gagana faa samoa)</option>
+                <option value="sn">(SN) Shona (chishona)</option>
+                <option value="so">(SO) Somali (soomaaliga, af soomaali)</option>
+                <option value="sq">(SQ) Albanian (shqip)</option>
+                <option value="sr">(SR) Serbian (српски језик)</option>
+                <option value="ss">(SS) Swati (siswati)</option>
+                <option value="st">(ST) Southern Sotho (sesotho)</option>
+                <option value="su">(SU) Sundanese (basa sunda)</option>
+                <option value="sv">(SV) Swedish (svenska)</option>
+                <option value="sw">(SW) Swahili (kiswahili)</option>
+                <option value="ta">(TA) Tamil (தமிழ்)</option>
+                <option value="te">(TE) Telugu (తెలుగు)</option>
+                <option value="tg">(TG) Tajik (тоҷикӣ, toğikī, تاجیکی)</option>
+                <option value="th">(TH) Thai (ไทย)</option>
+                <option value="ti">(TI) Tigrinya (ትግርኛ)</option>
+                <option value="tk">(TK) Turkmen (türkmen, түркмен)</option>
+                <option value="tl">(TL) Tagalog (wikang tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔)</option>
+                <option value="tn">(TN) Tswana (setswana)</option>
+                <option value="to">(TO) Tonga (faka tonga)</option>
+                <option value="tr">(TR) Turkish (türkçe)</option>
+                <option value="ts">(TS) Tsonga (xitsonga)</option>
+                <option value="tt">(TT) Tatar (татарча, tatarça, تاتارچا)</option>
+                <option value="tw">(TW) Twi (twi)</option>
+                <option value="ty">(TY) Tahitian (reo tahiti)</option>
+                <option value="ug">(UG) Uighur (uyƣurqə, ئۇيغۇرچە)</option>
+                <option value="uk">(UK) Ukrainian (українська)</option>
+                <option value="ur">(UR) Urdu (اردو)</option>
+                <option value="uz">(UZ) Uzbek (zbek, ўзбек, أۇزبېك)</option>
+                <option value="ve">(VE) Venda (tshivenḓa)</option>
+                <option value="vi">(VI) Vietnamese (tiếng việt)</option>
+                <option value="vo">(VO) Volapuk (volapük)</option>
+                <option value="wa">(WA) Walloon (walon)</option>
+                <option value="wo">(WO) Wolof (wollof)</option>
+                <option value="xh">(XH) Xhosa (isixhosa)</option>
+                <option value="yi">(YI) Yiddish (ייִדיש)</option>
+                <option value="yo">(YO) Yoruba (yorùbá)</option>
+                <option value="za">(ZA) Zhuang (saɯ cueŋƅ, saw cuengh)</option>
+                <option value="zh">(ZH) Chinese (中文 (zhōngwén), 汉语, 漢語)</option>
+                <option value="zu">(ZU) Zulu (isizulu)</option>
+            </select>
+            <br><br>
+            <label for="url_home">Personal web URL</label>
+            <input type="url" dir="auto" name="url_home" id="url_home" placeholder="Personal Web Homepage URL" maxlength="128" size="80">
+            <br><br>
+        </details>
+        <br><br>
+        <input type="submit" value=" O K ">
+    </form>
+</center>
+
+
+<script>
+    (function() {
+
+        const PasswordToggler = function(element, field) {
+            this.element = element;
+            this.field = field;
+            this.toggle();
+        };
+
+        PasswordToggler.prototype = {
+            toggle: function() {
+                const self = this;
+                self.element.addEventListener("change", function() {
+                    if (self.element.checked) {
+                        self.field.setAttribute("type", "text");
+                    } else {
+                        self.field.setAttribute("type", "password");
+                    }
+                }, false);
+            }
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const checkbox = document.querySelector("#show-hide"),
+                pwd = document.querySelector("#password"),
+                form = document.querySelector("#signin");
+                const toggler = new PasswordToggler(checkbox, pwd);
+        });
+
+    })();
+</script>
