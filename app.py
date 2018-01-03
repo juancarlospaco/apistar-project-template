@@ -4,7 +4,7 @@
 
 """APIStar Web App."""
 
-import sys
+
 import apistar_peewee  # https://github.com/aachurin/apistar_peewee
 from apistar.frameworks.wsgi import WSGIApp as App
 
@@ -14,15 +14,16 @@ from apistar import Component
 from apistar_jwt.authentication import get_jwt
 from apistar_jwt.token import JWT
 
+from models.base import *
+from models.user import User
+from models.example_model import *
 
-__version__ = "1.0.0"
-__license__ = "???"
+
+__version__ = "0.0.1"
+__license__ = "GPLv3+"
 __author__ = "???"
 __email__ = "user@example.com"
 __url__ = "https://example.com"
-
-
-sys.dont_write_bytecode = settings.get("DONT_WRITE_BYTECODE", True)  # No *.PYC
 
 
 app: App = App(
