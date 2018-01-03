@@ -3,6 +3,9 @@
 [APIStar](https://github.com/encode/apistar) project template, AKA Boilerplate.
 
 
+![Screenshot](temp.png)
+
+
 ```bash
 juan@x ~/ $ git clone https://github.com/juancarlospaco/apistar-project-template.git
 
